@@ -1,0 +1,27 @@
+{
+  "name": "bullvpn-login-automation",
+  "version": "1.0.0",
+  "description": "Automation Test Suite for BullVPN Login Feature using Playwright",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:demo": "cross-env DEMO=1 playwright test --headed --project=chromium",
+    "test:demo:security": "cross-env DEMO=1 playwright test security --headed --project=chromium",
+    "test:demo:email": "cross-env DEMO=1 playwright test email-login --headed --project=chromium",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:email": "playwright test email-login",
+    "test:security": "playwright test security",
+    "test:validation": "playwright test validation",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.12.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.4.0"
+  }
+}
